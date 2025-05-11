@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Твой результат</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff6600;
+        }
+        .role {
+            font-size: 24px;
+            margin: 20px 0;
+            color: #ffcc00;
+        }
+        .btn {
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: #ff8533;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Твой результат</h1>
+        <div class="role" id="result"></div>
+        <p>Спасибо за прохождение теста! Если хочешь попробовать ещё раз, нажми кнопку ниже.</p>
+        <a href="test.html" class="btn">Пройти тест снова</a>
+    </div>
+
+    <script>
+        const role = localStorage.getItem("cyberSportRole");
+        document.getElementById("result").textContent = role || "Роль не определена";
+    </script>
+</body>
+</html>

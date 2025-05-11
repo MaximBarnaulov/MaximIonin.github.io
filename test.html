@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест: какая роль в киберспорте тебе подходит?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #ff6600;
+            text-align: center;
+        }
+        .question {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #2a2a2a;
+            border-radius: 5px;
+        }
+        .options {
+            margin-left: 20px;
+        }
+        .btn {
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            display: block;
+            margin: 20px auto;
+        }
+        .btn:hover {
+            background-color: #ff8533;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Тест: какая роль в киберспорте тебе подходит?</h1>
+        
+        <form id="quiz">
+            <div class="question">
+                <p>1. Как ты обычно ведёшь себя в командной игре?</p>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="leader"> Беру на себя лидерство, руковожу</label><br>
+                    <label><input type="radio" name="q1" value="support"> Помогаю другим, поддерживаю</label><br>
+                    <label><input type="radio" name="q1" value="strategist"> Анализирую и предлагаю стратегии</label><br>
+                    <label><input type="radio" name="q1" value="fragger"> Иду в бой первым, устраняю врагов</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>2. Какой жанр игр тебе больше нравится?</p>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="shooter"> Шутеры (CS:GO, Valorant)</label><br>
+                    <label><input type="radio" name="q2" value="moba"> MOBA (Dota 2, League of Legends)</label><br>
+                    <label><input type="radio" name="q2" value="rts"> Стратегии (StarCraft, Age of Empires)</label><br>
+                    <label><input type="radio" name="q2" value="sports"> Спортивные симуляторы (FIFA, NBA 2K)</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>3. Как ты реагируешь на стрессовые ситуации?</p>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="calm"> Остаюсь спокойным и принимаю решения</label><br>
+                    <label><input type="radio" name="q3" value="emotional"> Эмоционирую, но быстро прихожу в себя</label><br>
+                    <label><input type="radio" name="q3" value="strategic"> Анализирую и ищу лучшее решение</label><br>
+                    <label><input type="radio" name="q3" value="impulsive"> Действую быстро на инстинктах</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>4. Сколько времени ты готов уделять тренировкам?</p>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="6h"> 6+ часов в день</label><br>
+                    <label><input type="radio" name="q4" value="3h"> 3-5 часов в день</label><br>
+                    <label><input type="radio" name="q4" value="1h"> 1-2 часа в день</label><br>
+                    <label><input type="radio" name="q4" value="casual"> Играю для развлечения</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>5. Какой стиль игры тебе ближе?</p>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="aggressive"> Агрессивный (давлю соперников)</label><br>
+                    <label><input type="radio" name="q5" value="defensive"> Защитный (контролирую карту)</label><br>
+                    <label><input type="radio" name="q5" value="flexible"> Гибкий (адаптируюсь под ситуацию)</label><br>
+                    <label><input type="radio" name="q5" value="supportive"> Поддерживающий (помогаю команде)</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>6. Как ты относишься к изучению тактик и меты?</p>
+                <div class="options">
+                    <label><input type="radio" name="q6" value="deep"> Изучаю глубоко, слежу за обновлениями</label><br>
+                    <label><input type="radio" name="q6" value="casual"> Знаю основы, но не углубляюсь</label><br>
+                    <label><input type="radio" name="q6" value="none"> Играю как чувствую</label><br>
+                    <label><input type="radio" name="q6" value="experiment"> Люблю экспериментировать</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>7. Как ты воспринимаешь поражения?</p>
+                <div class="options">
+                    <label><input type="radio" name="q7" value="analyze"> Анализирую ошибки и учусь</label><br>
+                    <label><input type="radio" name="q7" value="angry"> Злюсь, но потом успокаиваюсь</label><br>
+                    <label><input type="radio" name="q7" value="indifferent"> Не обращаю внимания</label><br>
+                    <label><input type="radio" name="q7" value="motivated"> Использую как мотивацию</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>8. Какой у тебя любимый персонаж/роль в играх?</p>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="damage"> Урон (DPS)</label><br>
+                    <label><input type="radio" name="q8" value="tank"> Танк (защитник)</label><br>
+                    <label><input type="radio" name="q8" value="healer"> Лекарь (саппорт)</label><br>
+                    <label><input type="radio" name="q8" value="utility"> Утилити (контроль, дебаффы)</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>9. Как ты ведёшь себя в клатче (решающем раунде)?</p>
+                <div class="options">
+                    <label><input type="radio" name="q9" value="confident"> Уверен в себе, иду на риск</label><br>
+                    <label><input type="radio" name="q9" value="careful"> Действую осторожно</label><br>
+                    <label><input type="radio" name="q9" value="teamplay"> Полагаюсь на команду</label><br>
+                    <label><input type="radio" name="q9" value="unpredictable"> Непредсказуем</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>10. Как ты относишься к стримингу и публичности?</p>
+                <div class="options">
+                    <label><input type="radio" name="q10" value="love"> Хочу быть известным</label><br>
+                    <label><input type="radio" name="q10" value="okay"> Нормально, если будут зрители</label><br>
+                    <label><input type="radio" name="q10" value="shy"> Стесняюсь, но могу привыкнуть</label><br>
+                    <label><input type="radio" name="q10" value="no"> Не хочу публичности</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>11. Как ты учишься новому в играх?</p>
+                <div class="options">
+                    <label><input type="radio" name="q11" value="guides"> Смотрю гайды и разборы</label><br>
+                    <label><input type="radio" name="q11" value="practice"> Просто играю и набиваю опыт</label><br>
+                    <label><input type="radio" name="q11" value="coach"> Занимаюсь с тренером</label><br>
+                    <label><input type="radio" name="q11" value="experiment"> Экспериментирую сам</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>12. Какой у тебя APM (действий в минуту)?</p>
+                <div class="options">
+                    <label><input type="radio" name="q12" value="high"> Высокий (200+)</label><br>
+                    <label><input type="radio" name="q12" value="medium"> Средний (100-200)</label><br>
+                    <label><input type="radio" name="q12" value="low"> Низкий (менее 100)</label><br>
+                    <label><input type="radio" name="q12" value="dontknow"> Не знаю</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>13. Как ты относишься к киберспортивным турнирам?</p>
+                <div class="options">
+                    <label><input type="radio" name="q13" value="dream"> Мечтаю участвовать</label><br>
+                    <label><input type="radio" name="q13" value="interested"> Интересно, но страшно</label><br>
+                    <label><input type="radio" name="q13" value="watch"> Люблю смотреть</label><br>
+                    <label><input type="radio" name="q13" value="indifferent"> Безразлично</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>14. Какой у тебя любимый аспект игры?</p>
+                <div class="options">
+                    <label><input type="radio" name="q14" value="mechanics"> Механика (прицел, реакции)</label><br>
+                    <label><input type="radio" name="q14" value="strategy"> Стратегия и тактика</label><br>
+                    <label><input type="radio" name="q14" value="team"> Командная работа</label><br>
+                    <label><input type="radio" name="q14" value="fun"> Просто кайфую</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>15. Как ты видишь себя через 5 лет?</p>
+                <div class="options">
+                    <label><input type="radio" name="q15" value="pro"> Профессиональный игрок</label><br>
+                    <label><input type="radio" name="q15" value="streamer"> Стример/контент-мейкер</label><br>
+                    <label><input type="radio" name="q15" value="coach"> Тренер или аналитик</label><br>
+                    <label><input type="radio" name="q15" value="hobby"> Останусь любителем</label>
+                </div>
+            </div>
+
+            <button type="button" class="btn" onclick="calculateResult()">Узнать результат</button>
+        </form>
+    </div>
+
+    <script>
+        function calculateResult() {
+            // Проверяем, что все вопросы заполнены
+            const allQuestions = document.querySelectorAll('.question');
+            let allAnswered = true;
+
+            allQuestions.forEach(question => {
+                const inputs = question.querySelectorAll('input[type="radio"]');
+                const isAnswered = Array.from(inputs).some(input => input.checked);
+                if (!isAnswered) {
+                    allAnswered = false;
+                    question.style.border = "2px solid red";
+                } else {
+                    question.style.border = "none";
+                }
+            });
+
+            if (!allAnswered) {
+                alert("Пожалуйста, ответь на все вопросы!");
+                return;
+            }
+
+            // Собираем ответы
+            const answers = {};
+            for (let i = 1; i <= 15; i++) {
+                const selected = document.querySelector(`input[name="q${i}"]:checked`);
+                answers[`q${i}`] = selected.value;
+            }
+
+            // Логика определения роли (можно усложнить)
+            let role = "Универсальный игрок";
+
+            if (answers.q1 === "leader" && answers.q4 !== "casual") {
+                role = "Капитан команды";
+            } else if (answers.q1 === "support" && answers.q8 === "healer") {
+                role = "Саппорт (поддержка)";
+            } else if (answers.q3 === "strategic" || answers.q6 === "deep") {
+                role = "Стратег / Аналитик";
+            } else if (answers.q5 === "aggressive" && answers.q14 === "mechanics") {
+                role = "Основной стрелок (Entry Fragger)";
+            } else if (answers.q4 === "casual" || answers.q15 === "hobby") {
+                role = "Любитель (киберспорт не твой профиль)";
+            } else if (answers.q10 === "love" && answers.q15 === "streamer") {
+                role = "Киберспортсмен-стример";
+            }
+
+            // Сохраняем результат и переходим на страницу с результатом
+            localStorage.setItem("cyberSportRole", role);
+            window.location.href = "result.html";
+        }
+    </script>
+</body>
+</html>
