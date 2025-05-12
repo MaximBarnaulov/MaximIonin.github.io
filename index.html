@@ -9,38 +9,105 @@
             font-family: Arial, sans-serif;
             background-color: #1a1a1a;
             color: white;
-            text-align: center;
             margin: 0;
             padding: 0;
+            line-height: 1.6;
         }
         .container {
             max-width: 800px;
-            margin: 50px auto;
+            margin: 0 auto;
             padding: 20px;
         }
         h1 {
             color: #ff6600;
+            text-align: center;
+        }
+        h2 {
+            color: #ff8533;
+            margin-top: 30px;
+        }
+        .info-section {
+            background-color: #2a2a2a;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
         }
         .btn {
             background-color: #ff6600;
             color: white;
             border: none;
-            padding: 10px 20px;
+            padding: 12px 25px;
             font-size: 16px;
             cursor: pointer;
             border-radius: 5px;
             text-decoration: none;
+            display: block;
+            width: 200px;
+            text-align: center;
+            margin: 30px auto;
         }
         .btn:hover {
             background-color: #ff8533;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #777;
+            font-size: 12px;
+        }
+        .highlight {
+            color: #ffcc00;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Киберспорт: твой путь к успеху</h1>
-        <p>Пройди тест и узнай, какая роль в киберспорте тебе подходит!</p>
-        <a href="test.html" class="btn">Начать тест</a>
+        
+        <div class="info-section">
+            <h2>Кто такой киберспортсмен?</h2>
+            <p>Киберспортсмен — это профессиональный игрок, который участвует в соревнованиях по видеоиграм на высоком уровне. Это <span class="highlight">полноценная профессия</span>, требующая дисциплины, таланта и постоянного совершенствования.</p>
+            
+            <h2>Что нужно, чтобы стать киберспортсменом?</h2>
+            <ul>
+                <li>💻 <span class="highlight">Технические навыки:</span> отличное владение игровыми механиками</li>
+                <li>⏱ <span class="highlight">Реакция:</span> скорость реакции менее 200 мс</li>
+                <li>🧠 <span class="highlight">Стратегическое мышление:</span> умение анализировать игру</li>
+                <li>👥 <span class="highlight">Командная работа:</span> 80% дисциплин — командные</li>
+                <li>⏳ <span class="highlight">Время на тренировки:</span> 6-8 часов ежедневно</li>
+            </ul>
+            
+            <h2>Топ-5 киберспортивных дисциплин:</h2>
+            <ol>
+                <li>Counter-Strike 2 (CS2)</li>
+                <li>Dota 2</li>
+                <li>Valorant</li>
+                <li>League of Legends</li>
+                <li>Rocket League</li>
+            </ol>
+            
+            <h2>Зарплаты в киберспорте:</h2>
+            <p>Средние заработки профессиональных игроков:</p>
+            <ul>
+                <li>Новички: <span class="highlight">$500-$1,000</span> в месяц</li>
+                <li>Опытные игроки: <span class="highlight">$3,000-$10,000</span> в месяц</li>
+                <li>Топ-игроки: <span class="highlight">$30,000+</span> в месяц + спонсорские контракты</li>
+            </ul>
+        </div>
+        
+        <a href="test.html" class="btn">Пройти тест</a>
+        
+        <div class="footer">
+            Максим Ионин
+        </div>
     </div>
 </body>
 </html>
